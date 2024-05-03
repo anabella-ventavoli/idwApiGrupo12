@@ -4,7 +4,82 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Estilo para la barra de navegación */
+
+/* banner2.png*/
+
+.header-content{
+	padding:10px;
+    align-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    background: url(../assets/img/banner2.png)no-repeat center;
+    background-size: cover;
+    background-position: 0px -60px;
+    overflow: hidden;
+    height: 200px;
+    text-align: center;
+}
+
+.header-content h2 { 
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.header-content p { 
+    font-size: 26px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+ /* saco display:flex; */
+.header-links {
+    display:flex;
+    background-color: #003B95;
+}
+/* Agregado */
+.header-links ul {
+    list-style-type: none;
+    padding: 0;
+    display:flex;
+    align-items: center; /* Centra horizontalmente */
+    margin-left: auto;
+}
+
+/* Agregado */
+.header-links ul li {
+    display: inline-block;
+    
+}
+
+.header-links li p {
+    display: inline;
+    padding: 5px;
+}
+
+.header-links img {
+    width: 20px;
+}
+
+#logo  {
+    margin-left: 20%;
+}
+
+#logo img {
+    width: 80px;
+}
+
+.header-links a {
+    font-size: 14px;
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
 nav {
     background-color: #FD6303;
 }
@@ -54,18 +129,25 @@ body{
     padding: 0 20px;
 }
 
-.featured-hotels{
+.featured-hotels {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 50px  ;
+    margin-top: 50px;
 }
 
-.featured-houses{
+.featured-houses {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 50px  ;
+    margin-top: 50px;
+}
+
+.featured-campers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .hotel {
@@ -78,38 +160,133 @@ body{
     text-align: center;
 } 
 
+.camper {
+    flex: 0 1 30%;
+    text-align: center;
+} 
+
 .hotel img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 16px;
+    margin-bottom: 15px;
 }
 
 .house img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 16px;
+    margin-bottom: 15px;
 }
 
+.camper img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 15px;
+}
 
 .hotel a {
-    color:#555;
+    color:#000;
     text-decoration: none;
-    font-size: 18px;
     font-family:Arial, Helvetica, sans-serif;
     display: block;
+    text-align: left;
 }
-
-
 .house a {
-    color:#555;
+    color:#000;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: left;
+}
+.camper a {
+    color:#000;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: left;
+}
+
+.nombre-accom {
+    text-shadow: 1px 1px 2px black;
+}
+
+.lugar-accom {
+    font-size: 14px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.price {
+    margin-top: 5px;
+    font-size: 14px;
+    float: right;
+}
+
+/* Efecto para expandir imagen al pasar el cursor */
+
+.hotel img:hover {
+    transform: scale(1.1); 
+}
+
+.house img:hover {
+    transform: scale(1.1); 
+}
+
+.camper img:hover {
+    transform: scale(1.1); 
+}
+
+.footer-links {
+    background-color: #FD6303;
+    color: white;
+    padding: 10px 0px;
+    margin-top:100px;
+}
+
+.footer-links ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links ul li img {
+    width: 35px;
+}
+
+
+/* Estilo links del footer*/
+footer ul { 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilo para los elementos de la lista*/
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Estilo para las anclas*/
+footer ul li a {
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
     font-family:Arial, Helvetica, sans-serif;
-    display: block;
+    padding: 10px 15px;
 }
 
-.footer {
+.copyright {
     background-color: #003B95;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     font-size: 12px;
+    margin-bottom:2px;
+    margin-top:2px;
 }
